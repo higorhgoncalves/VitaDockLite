@@ -13,10 +13,10 @@ echo "Detected distribution: "$distroID
 echo "Detected ID-like: "$distroIDL
 
 #set debian flag
-if [ $distroIDL == "debian" ]
+if [ $distroIDL = "debian" ]
 then
   installType=1
-elif [ $distroID == "debian" ]
+elif [ $distroID = "debian" ]
 then
   installType=1
 else
@@ -24,10 +24,10 @@ else
 fi
 
 #set arch flag
-if [ $distroIDL == "arch" ]
+if [ $distroIDL = "arch" ]
 then
   installType=2
-elif [ $distroID == "arch" ]
+elif [ $distroID = "arch" ]
 then
   installType=2
 fi
